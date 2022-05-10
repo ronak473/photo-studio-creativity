@@ -1,0 +1,70 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:	Be-Photography | Creative Photography Agency, Portfolio and Multipurpose HTML5 Responsive Template
+Version:	1.0.0
+Assigned to:	Themeforest
+Primary use:	Photography, Portfolio, Html5, Responsive, Bootstrap, Agency, Creative
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1 Body
+2 Common Css
+	2.1 Reset Style
+	2.2 Form Inputs
+	2.3 Button Style
+	2.4 Padding Style
+	2.5 Margin Style
+3 Header Style
+	3.1 Main Header
+	3.2 Search bar
+4 Main Slider
+5 Heading Style
+6 Photographer
+7 About
+8 Services
+9 Portfolio
+10 Work Gallery
+11 Home Blog
+12 Agency
+13 Photography
+14 Contact form
+15 Owl nav Style
+16 Preloader
+17 Page Header
+18 Pagination
+19 Comming Soon
+20 Contact Page
+21 Blog Page
+22 Error Style
+23 Footer Style
+
+-------------------------------------------------------------------*/
+/*---font---*/
+@import url('https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800');
+/*---bootstap.CSS ---*/
+@import url("assets/css/bootstrap.min.css");
+/*---mega menu .CSS ---*/
+@import url("assets/plugin/megamenu/css/hover-dropdown-menu.css");
+ /*---fancybox.CSS ---*/
+@import url("assets/plugin/fancyBox/css/jquery.fancybox.css");
+/*---owl-carousal.CSS ---*/
+@import url("assets/plugin/owl-carousel/css/owl.carousel.css");
+@import url("assets/plugin/owl-carousel/css/owl.theme.default.css");
+/*---fontawesome.CSS  font ---*/
+@import url("assets/plugin/font-awesome/css/font-awesome.min.css");
+/* theme effect hover CSS*/
+@import url("assets/plugin/hover-effect/css/themeHover.css");
+@import url("assets/plugin/mixItUp/css/mixitup.css");
+
+
+/*---STYLE.CSS inluad style---*/
+@import url("assets/css/style.css");
+
+/*---responsive.CSS inluad style---*/
+@import url("assets/css/responsive.css");
+
+/*---color.CSS inluad color---*/
+@import url("assets/css/color.css");
