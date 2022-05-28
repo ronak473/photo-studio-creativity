@@ -72,8 +72,10 @@ $(window).on('load', function () {
   //========================================
   // Scroll top
   //========================================
+
   var boDy = $('body');
   if (scrollTop.length) {
+    console.log('hello');
     scrollTop.on('click', function () {
       boDy.animate(
         {
@@ -84,9 +86,12 @@ $(window).on('load', function () {
     });
 
     $(window).on('scroll', function () {
+      console.log('hello2');
       if ($(this).scrollTop() > 500) {
+        console.log('hello3');
         scrollTop.addClass('showScrollTop');
       } else {
+        console.log('hello4');
         scrollTop.removeClass('showScrollTop');
       }
     });
