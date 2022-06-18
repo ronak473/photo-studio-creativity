@@ -1615,7 +1615,7 @@ ul.nav.navbar-nav li a:hover {
 .work-gallery img {
     float: left;
     height: 500px;
-    object-fit: cover;
+    width: 100%;
 }
 
 .mixitup-btn a.filter {

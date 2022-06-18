@@ -256,7 +256,7 @@ function initMap() {
       scrollwheel: false,
       draggable: true,
       //backgroundColor:grey,
-      center: new google.maps.LatLng(22.9623, 76.0508),
+      center: new google.maps.LatLng(22.44176103035581, 72.90085994562668),
       mapTypeId: google.maps.MapTypeId.ROADMAP,
     };
     var map = new google.maps.Map(
@@ -265,10 +265,10 @@ function initMap() {
     );
     var marker = new google.maps.Marker({
       map: map,
-      position: new google.maps.LatLng(22.9623, 76.0508),
+      position: new google.maps.LatLng(22.44176103035581, 72.90085994562668),
     });
     var infowindow = new google.maps.InfoWindow({
-      content: '<strong>ITGEEkS</strong>',
+      content: '<strong>Photostudio Creativity</strong>',
     });
     google.maps.event.addListener(marker, 'click', function () {
       infowindow.open(map, marker);
@@ -282,7 +282,7 @@ function comingsoonInt() {
   'use strict';
 
   // Set the date we're counting down to
-  var countDownDate = new Date('Dec 24, 2017 15:37:25').getTime();
+  var countDownDate = new Date('Jun 24, 2022 15:37:25').getTime();
 
   var x = setInterval(function () {
     var now = new Date().getTime();
