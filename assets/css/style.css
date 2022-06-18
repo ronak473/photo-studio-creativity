@@ -1311,6 +1311,11 @@ ul.nav.navbar-nav li a:hover {
     padding-bottom: 30px;
 }
 
+.theme-heading li {
+    text-align: left;
+    list-style-type: none;
+}
+
 .theme-heading h1 {
     position: absolute;
     top: 0;
@@ -1466,6 +1471,7 @@ ul.nav.navbar-nav li a:hover {
     float: left;
     width: 100%;
     padding-bottom: 100px;
+    padding-top: 15%;
 }
 
 .my-story .first {
