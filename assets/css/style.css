@@ -1612,10 +1612,19 @@ ul.nav.navbar-nav li a:hover {
     padding: 0;
 }
 
+.portfolio-gallery {
+    padding: 5px;
+}
+
 .work-gallery img {
     float: left;
     height: 500px;
     width: 100%;
+}
+
+.portfolio-gallery img {
+    float: left;
+    height: 300px;
 }
 
 .mixitup-btn a.filter {
@@ -1721,6 +1730,15 @@ ul.nav.navbar-nav li a:hover {
 }
 
 .work-gallery .theme-hover .content-box {
+    margin-top: -27.5px;
+}
+
+.portfolio-gallery .content-box a {
+    font-size: 50px;
+    color: #fff;
+}
+
+.portfolio-gallery .theme-hover .content-box {
     margin-top: -27.5px;
 }
 

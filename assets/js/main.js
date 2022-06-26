@@ -12,7 +12,6 @@ $(window).on('load', function () {
   var fancybox = $('.fancybox');
   var faq = $('#faq');
   var comingSoonTimer = $('#coming-soon-timer');
-  var fancyboxIframe = $('.fancybox-iframe');
   var mixItUp = $('#mixItUp');
   var scrollTop = $('#scroll-top');
 
@@ -308,6 +307,64 @@ function comingsoonInt() {
 
     document.getElementById('minutes').innerHTML = minutes;
   }, 1000);
+}
+
+function loadPhotographyImages() {
+  'use strict';
+
+  const photographyGallery = document.getElementById('photographyGallery');
+
+  const notValidIndex = ['04', '12', '22', '39', '42', '53', '74', '76'];
+
+  for (let index = 1; index < 87; index++) {
+    if (index < 10) {
+      index = '0' + index;
+    }
+
+    if (notValidIndex.includes(index.toString())) {
+      continue;
+    }
+
+    const portfolioGalleryDiv = document.createElement('div');
+    portfolioGalleryDiv.setAttribute('class', 'portfolio-gallery col-sm-3');
+
+    const themeHoverDiv = document.createElement('div');
+    themeHoverDiv.setAttribute('class', 'theme-hover');
+    portfolioGalleryDiv.appendChild(themeHoverDiv);
+
+    const figureElement = document.createElement('figure');
+    themeHoverDiv.appendChild(figureElement);
+
+    const imgElement = document.createElement('img');
+    const imgUrl = 'assets/img/portfolio/ ' + index + '.jpg';
+    imgElement.src = imgUrl;
+    imgElement.alt = index;
+    figureElement.appendChild(imgElement);
+
+    const figCaptionElement = document.createElement('figcaption');
+    figureElement.appendChild(figCaptionElement);
+
+    const contentDiv = document.createElement('div');
+    contentDiv.setAttribute('class', 'content');
+    figCaptionElement.appendChild(contentDiv);
+
+    const contentBoxDiv = document.createElement('div');
+    contentBoxDiv.setAttribute('class', 'content-box');
+    contentDiv.appendChild(contentBoxDiv);
+
+    const aElement = document.createElement('a');
+    aElement.href = imgUrl;
+    aElement.setAttribute('class', 'fancybox');
+    aElement.setAttribute('data-fancybox-group', 'group');
+    contentBoxDiv.appendChild(aElement);
+
+    const iElement = document.createElement('i');
+    iElement.setAttribute('class', 'fa fa-file-image-o');
+    iElement.setAttribute('aria-hidden', 'true');
+    aElement.appendChild(iElement);
+
+    photographyGallery.appendChild(portfolioGalleryDiv);
+  }
 }
 
 /*
