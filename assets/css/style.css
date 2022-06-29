@@ -102,6 +102,11 @@ ul li a {
     background-color: #eee;
 }
 
+.site_logo {
+    width: 70px;
+    height: 30px;
+}
+
 /* 2.2 Form Inputs */
 
 input[type=text],
