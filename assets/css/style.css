@@ -1316,6 +1316,10 @@ ul.nav.navbar-nav li a:hover {
     padding-bottom: 30px;
 }
 
+.services-left {
+    padding-left: 35%;
+}
+
 .theme-heading li {
     text-align: left;
     list-style-type: none;
